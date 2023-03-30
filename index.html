@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container-fluid vh-100 d-flex flex-column p-0">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid d-flex flex-nowrap">
+                    <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt=""></a>
+                    <div class="input-group">
+                        <span class="input-group-text my_border-none" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control my_border-none my_bg-grey" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-list-ul"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-bell" style="color: #ff8f00;"></i>
+                                </a>
+                                <ul class="dropdown-menu my_right-0" id="">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="my_h100">
+
+            <div class="d-flex my_overflow my_h100 ">
+
+                <!-- BARRA LATERALE -->
+
+                <div class="my_w150 col my_bg-blue text-center d-flex flex-column text-white">
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                                <span>Home</span>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                                <span>Home</span>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                                <span>Home</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PARTE FINALE DELLA BARRA LATERALE -->
+
+                    <div class="mt-auto">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                                <span>Home</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <!-- CONTENUTO PRINCIPALE -->
+
+                <div class="col my_h100 my_overflow-y">
+
+                    <!-- HEADER MAIN -->
+
+                    <div class="my_bg-lightblue d-flex">
+                        <div class="col-6">
+                            <h2>Boolean</h3>
+                            <a class="btn btn-primary" href="#" role="button">Link</a>
+                        </div>
+                        <div class="col-3 text-white">
+                            <p>Studenti online negli ultimi 30 minuti</p>
+                            <p>125</p>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+
+                    <!-- CONTENUTO MAIN -->
+
+
+                    <div class="container-fluid d-flex flex-row">
+                        <div class="col-8 d-flex flex-column">
+
+                            <div class="card">
+                                <h5 class="card-header">Prossime classi</h5>
+                                <div class="card-body">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col-8">#</th>
+                                                <th scope="col-1">First</th>
+                                                <th scope="col-1">Last</th>
+                                                <th scope="col-1">Handle</th>
+                                                <th scope="col-1">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                              </div>
+    
+                        </div>
+    
+                        <div class="col-4 d-flex flex-column">
+    
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+
+
+        </main>
+    </div>
+        
+
+</body>
+</html>

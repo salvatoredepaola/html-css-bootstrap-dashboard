@@ -1,0 +1,52 @@
+.my_border-none{
+    border: none;
+}
+.my_bg-grey{
+    background-color: #e9ecef;
+}
+.my_bg-lightblue{
+    background-color: #1b72e8;
+}
+
+.my_bg-blue{
+    background-color: #165bba;
+}
+.my_bg-darkblue{
+    background-color: #11283e;
+}
+.my_right-0{
+    right: 0;
+}
+.my_btn{
+    padding: 0.25rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 2px solid #165bba;
+    color: white;
+    transition: 0.2s;
+}
+.my_w150{
+    max-width: 150px;
+}
+
+.my_bg-red{
+    background-color: red;
+}
+
+.my_h-max{
+    height: 100vh;
+}
+.my_h100{
+    height: 100%;
+}
+.my_h50{
+    height: 50px;
+}
+.my_overflow{
+    overflow: hidden;
+}
+.my_overflow-y{
+    overflow-y: auto;
+}
