@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container-fluid vh-100 d-flex flex-column p-0">
+    <div class="container-fluid my_h-max d-flex flex-column p-0">
         <header>
-            <nav class="navbar navbar-expand-lg bg-light">
+            <nav class="navbar navbar-expand-lg my_bg-white my_58">
                 <div class="container-fluid d-flex flex-nowrap">
-                    <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt=""></a>
+                    <a class="navbar-brand" id="desktop-logo" href="#"><img src="./img/logo.svg" alt=""></a>
+                    <a class="navbar-brand p-0" id="mobile-logo" href="#"><img src="./img/mobile-logo.png" alt=""></a>
                     <div class="input-group">
                         <span class="input-group-text my_border-none" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
                         <input type="text" class="form-control my_border-none my_bg-grey" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
@@ -39,7 +40,7 @@
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fa-solid fa-bell" style="color: #ff8f00;"></i>
                                 </a>
-                                <ul class="dropdown-menu my_right-0" id="">
+                                <ul class="dropdown-menu" id="my_right">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -57,26 +58,26 @@
 
                 <!-- BARRA LATERALE -->
 
-                <div class="my_w150 col my_bg-blue text-center d-flex flex-column text-white">
+                <div class="my_w150 py-2 col my_bg-darkblue text-center d-flex flex-column text-white my_nav-img">
                     <div>
-                        <div class="row">
+                        <div class="row py-2">
                             <div class="col">
-                                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-                                <span>Home</span>
+                                <i class="fa-solid fa-house px-2" style="color: #ffffff;"></i>
+                                <span class="px-2">Home</span>
                             </div>
                         </div>
                     
-                        <div class="row">
+                        <div class="row py-2">
                             <div class="col">
-                                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-                                <span>Home</span>
+                                <i class="fa-solid fa-chart-column px-2" style="color: #ffffff;"></i>
+                                <span class="px-2">Home</span>
                             </div>
                         </div>
                     
-                        <div class="row">
+                        <div class="row py-2">
                             <div class="col">
-                                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-                                <span>Home</span>
+                                <i class="fa-solid fa-signal px-2" style="color: #ffffff;"></i>
+                                <span class="px-2">Home</span>
                             </div>
                         </div>
                     </div>
@@ -86,8 +87,8 @@
                     <div class="mt-auto">
                         <div class="row">
                             <div class="col">
-                                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-                                <span>Home</span>
+                                <i class="fa-solid fa-gear px-2" style="color: #ffffff;"></i>
+                                <span class="px-2">Admin</span>
                             </div>
                         </div>
                     </div>
@@ -101,67 +102,194 @@
                     <!-- HEADER MAIN -->
 
                     <div class="my_bg-lightblue d-flex">
-                        <div class="col-6">
-                            <h2>Boolean</h3>
-                            <a class="btn btn-primary" href="#" role="button">Link</a>
+                        <div class="col-6 text-white d-flex my-auto">
+                            <p class="fw-semibold fs-3 m-0">Boolean</p>
+                            <button type="button" class="btn btn-secondary btn-sm">Small button</button>
                         </div>
                         <div class="col-3 text-white">
                             <p>Studenti online negli ultimi 30 minuti</p>
                             <p>125</p>
                         </div>
-                        <div class="col-3"></div>
+                        <div class="col-3 text-white d-flex my-auto">
+                            <p class="m-0 px-3 d-flex align-items-center">Nuovo studente</p>
+                            <button class="me-2 my_btn rounded"><i class="fa-sharp fa-solid fa-plus" style="color: #ffffff;"></i></button>
+                        </div>
                     </div>
 
                     <!-- CONTENUTO MAIN -->
 
 
-                    <div class="container-fluid d-flex flex-row">
-                        <div class="col-8 d-flex flex-column">
-
-                            <div class="card">
-                                <h5 class="card-header">Prossime classi</h5>
+                    <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-lg-8 flex-column py-3">
+                            <div class="card mb-3">
+                                <h5 class="card-header">Featured</h5>
                                 <div class="card-body">
-                                    <table class="table table-hover">
+                                    <table class="table table-hover my_fs-10">
                                         <thead>
-                                            <tr>
-                                                <th scope="col-8">#</th>
-                                                <th scope="col-1">First</th>
-                                                <th scope="col-1">Last</th>
-                                                <th scope="col-1">Handle</th>
-                                                <th scope="col-1">Handle</th>
-                                            </tr>
+                                          <tr>
+                                            <th scope="col" class="py-3 px-0">Nome</th>
+                                            <th scope="col" class="my_50"></th>
+                                            <th scope="col" class="py-3 px-2">Data di inizio</th>
+                                            <th scope="col" class="py-3 px-2">Roi</th>
+                                            <th scope="col" class="py-3 px-2">Stato</th>
+                                            <th scope="col" class="py-3 px-2">Azioni</th>
+                                          </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
-                                                <td>@mdo</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
-                                                <td>@mdo</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">3</th>
-                                                <td colspan="2">Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>@mdo</td>
-                                            </tr>
+                                          <tr>
+                                            <th scope="row" class="my_img"></th>
+                                            <td>Classe 76</td>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Success</span></td>
+                                            <td class="d-flex"><button class="me-2 my_btn-grey rounded"><i class="fa-solid fa-pen"></i></button><button class="my_btn-grey rounded"><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="my_img"></th>
+                                            <td>Classe 76</td>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Success</span></td>
+                                            <td class="d-flex"><button class="me-2 my_btn-grey rounded"><i class="fa-solid fa-pen"></i><button class="my_btn-grey rounded"><i class="fa-solid fa-trash"></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="my_img"></th>
+                                            <td>Classe 76</td>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-warning">Warning</span></td>
+                                            <td class="d-flex"><button class="me-2 my_btn-grey rounded"><i class="fa-solid fa-pen"></i></button><button class="my_btn-grey rounded"><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="my_img"></th>
+                                            <td>Classe 76</td>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Success</span></td>
+                                            <td class="d-flex"><button class="me-2 my_btn-grey rounded"><i class="fa-solid fa-pen"></i></button><button class="my_btn-grey rounded"><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="my_img"></th>
+                                            <td>Classe 76</td>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-danger">Danger</span></td>
+                                            <td class="d-flex"><button class="me-2 my_btn-grey rounded"><i class="fa-solid fa-pen"></i></button><button class="my_btn-grey rounded"><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="my_img"></th>
+                                            <td>Classe 76</td>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Success</span></td>
+                                            <td class="d-flex"><button class="me-2 my_btn-grey rounded"><i class="fa-solid fa-pen"></i></button><button class="my_btn-grey rounded"><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="my_img"></th>
+                                            <td>Classe 76</td>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-danger">Danger</span></td>
+                                            <td class="d-flex"><button class="me-2 my_btn-grey rounded"><i class="fa-solid fa-pen"></i></button><button class="my_btn-grey rounded"><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="my_img"></th>
+                                            <td>Classe 76</td>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Success</span></td>
+                                            <td class="d-flex"><button class="me-2 my_btn-grey rounded"><i class="fa-solid fa-pen"></i></button><button class="my_btn-grey rounded"><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
                                         </tbody>
-                                    </table>
-                              </div>
-    
+                                      </table>
+                                </div>      
+                            </div>
+                            <div class="card">
+                                <h5 class="card-header">Featured</h5>
+                                <div class="card-body">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                              Accordion Item #1
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                              Accordion Item #2
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                              Accordion Item #3
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>      
+                            </div>
+                          </div>
+                          <div class="col-lg-4  flex-column py-3">
+                            <div class="card mb-3">
+                                <h5 class="card-header">Featured</h5>
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                          <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                          <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                          <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                                        </li>
+                                      </ul>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card mb-3">
+                                        <img src="./img/stats.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body border-bottom">
+                                          <h5 class="card-title">Utenti attivi</h5>
+                                          <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                        </div>
+                                        <div class="card-body border-bottom">
+                                          <p class="card-text"><small>Gennaio: 1200</small></p>
+                                        </div>
+                                        <div class="card-body border-bottom">
+                                          <p class="card-text"><small>Febbraio: 800</small></p>
+                                        </div>
+                                        <div class="card-body border-bottom">
+                                          <p class="card-text"><small>Marzo: 1500</small></p>
+                                        </div>
+                                        <div class="card-body">
+                                          <a href="" class="link-primary">Visualizza report approfondito</a>
+                                        </div>
+                                          
+                                        
+                                </div>      
+                            </div>
+                          </div>
                         </div>
-    
-                        <div class="col-4 d-flex flex-column">
-    
-                        </div>
-                    </div>
+                      </div>
                     
 
                 </div>

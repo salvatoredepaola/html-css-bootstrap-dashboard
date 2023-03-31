@@ -4,6 +4,9 @@
 .my_bg-grey{
     background-color: #e9ecef;
 }
+.my_bg-white{
+    background-color: white;
+}
 .my_bg-lightblue{
     background-color: #1b72e8;
 }
@@ -18,14 +21,26 @@
     right: 0;
 }
 .my_btn{
-    padding: 0.25rem 1rem;
+    padding: 0.2rem 0.5rem;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
     cursor: pointer;
-    border: 2px solid #165bba;
+    border: 1px solid white;
     color: white;
     transition: 0.2s;
+    background-color: #1b72e8;
+}
+.my_btn-grey{
+    padding: 0.2rem 0.45rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid gray;
+    color: gray;
+    transition: 0.2s;
+    background-color: white;
 }
 .my_w150{
     max-width: 150px;
@@ -36,7 +51,14 @@
 }
 
 .my_h-max{
-    height: 100vh;
+    height: calc(100vh - 58px);
+}
+#mobile-logo img{
+    width: 40px;
+}
+#my_right{
+    right: 0;
+    left: auto;
 }
 .my_h100{
     height: 100%;
@@ -44,9 +66,54 @@
 .my_h50{
     height: 50px;
 }
+.my_58{
+    height: 58px;
+}
 .my_overflow{
     overflow: hidden;
 }
 .my_overflow-y{
     overflow-y: auto;
 }
+.my_nav-img{
+    background-image: url(../img/sidebar-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.my_img{
+    background-image: url(../img/class-avatar.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.my_50{
+    width: 50%;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .my_nav-img span{
+        display: none;
+    }
+    .my_w150{
+        max-width: 60px;
+    }
+    #desktop-logo{
+        display: none;
+    }
+    #mobile-logo{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 577px) {
+
+    #desktop-logo{
+        display: block;
+    }
+    #mobile-logo{
+        display: none;
+    }
+}
+
+
