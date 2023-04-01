@@ -31,6 +31,17 @@
     transition: 0.2s;
     background-color: #1b72e8;
 }
+.my_btn-blue{
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    transition: 0.2s;
+    background-color: #1b72e8;
+}
 .my_btn-grey{
     padding: 0.2rem 0.45rem;
     text-align: center;
@@ -41,6 +52,9 @@
     color: gray;
     transition: 0.2s;
     background-color: white;
+}
+.my_w50{
+    --bs-offcanvas-width: 50%;
 }
 .my_w150{
     max-width: 150px;
@@ -89,8 +103,12 @@
     width: 50%;
 }
 
-
 @media screen and (max-width: 576px) {
+
+
+}
+
+@media screen and (max-width: 992px) {
 
     .my_nav-img span{
         display: none;
@@ -104,15 +122,21 @@
     #mobile-logo{
         display: block;
     }
+    .my_w50{
+        --bs-offcanvas-width: 100%;
+    }
 }
 
-@media screen and (min-width: 577px) {
+@media screen and (min-width: 993px) {
 
     #desktop-logo{
         display: block;
     }
     #mobile-logo{
         display: none;
+    }
+    .my_w50{
+        --bs-offcanvas-width: 50%;
     }
 }
 
